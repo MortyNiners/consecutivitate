@@ -6,11 +6,11 @@ dima.style.height = '300px';
 dima.style.backgroundColor = 'red';
 
 dima.addEventListener("keypress", (e) => {
-    if (e.key === 'shift') {
+    if (e.shiftKey) {
         dima.addEventListener("keypress", (e) => {
-            if (e.key === "tab") {
+            if (e.code === 9) {
                 dima.addEventListener("keypress", (e) => {
-                    if (e.key === "enter") {
+                    if (e.code === 13) {
                         dorin.style.width = '300px';
                         dorin.style.height = '300px';
                         dorin.style.backgroundColor = 'blue';
